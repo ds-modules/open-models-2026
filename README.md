@@ -16,7 +16,7 @@ Instructors run [`instructor/get-the-models.ipynb`](instructor/get-the-models.ip
 
 | # | Notebook | What you do |
 |---|---|---|
-| 1 | Run the model | Load a small model and get a response from a few lines of Python. See the exact chat template that goes in and what comes out. |
+| 1 | Run the model | Load a model in a few lines of Python. See the chat template and the tokens it actually gets, why it cannot count the r's in strawberry, and what thinking on and off does. Then run the same questions on all four sizes and watch the answers go from wrong to right. |
 | 2 | Prompts and behavior | Change the system prompt and conversation history. Predict how the answers change. |
 | 3 | Generation | Turn temperature and the other generation settings and watch what happens. |
 | 4 | Evaluation | Build a small set of test questions and compare models, prompts, and settings, instead of judging one answer at a time. |
