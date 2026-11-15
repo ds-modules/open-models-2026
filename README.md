@@ -10,19 +10,28 @@ Most students meet a language model through a chat app or a commercial API, so t
 
 ## The notebooks
 
-Each one stands on its own, so you can start anywhere.
+Coming soon. Here is the plan. Each one stands on its own, so you can start anywhere.
 
 | # | Notebook | What you do |
 |---|---|---|
-| 1 | [Run the model](notebooks/01-run-the-model.ipynb) | Load a small model with llama-cpp-python and call it from Python. Try `max_tokens`, `temperature`, a system message, few-shot examples, and see why the chat format matters. |
-| 2 | [Prompts and context](notebooks/02-prompts-and-context.ipynb) | Why the model does not remember anything, how the messages list works, dynamic system prompts for different students, and keeping the history from getting too long. |
-| 3 | [Generation settings](notebooks/03-generation-settings.ipynb) | Temperature, tokens, few-shot, hallucination and sycophancy, then build a writing assistant with a system prompt. |
-| 4 | [Evaluation](notebooks/04-evaluation.ipynb) | Have the model take open SAT-style questions, pull its answers out with Python, and score it on a whole set instead of one answer at a time. |
-| 5 | [AI tutor](notebooks/05-ai-tutor.ipynb) | Build a course tutor: load course materials, search them, and have the model answer from what it found (RAG). |
+| 1 | Run the model | Load a small model and get a response from a few lines of Python. See the exact chat template that goes in and what comes out. |
+| 2 | Prompts and behavior | Change the system prompt and conversation history. Predict how the answers change. |
+| 3 | Generation | Turn temperature and the other generation settings and watch what happens. |
+| 4 | Evaluation | Build a small set of test questions and compare models, prompts, and settings, instead of judging one answer at a time. |
+| 5 | Build a tutor | Put the model, the system prompt, and some Python together into a tutor that guides a student to the answer instead of giving it away. |
 
-**Extras:** [Tokens and weights](notebooks/extras/tokens-and-weights.ipynb) opens up a GGUF file to show the tokens, the vocabulary, and the weights as plain numbers.
+## Reference material
 
-**For instructors:** [Download models](instructor/download-models.ipynb) puts GGUF models in a shared folder for the whole class. [GPU explorer](instructor/gpu-explorer.ipynb) shows how GPU layers, threads, and context size change speed and GPU memory.
+These come from [ds-modules/Small_Models_SP26](https://github.com/ds-modules/Small_Models_SP26), our Spring 2026 intro to AI materials. We are drawing on them for the notebooks above.
+
+- [Small LM demo with llama-cpp-python](https://github.com/ds-modules/Small_Models_SP26/blob/main/2-Beginner_NBs/2-1-LlamaCpp_SmallLM_Demo.ipynb): loading a model, `max_tokens`, `temperature`, system messages, few-shot, chat format
+- [Context management and dynamic system prompts](https://github.com/ds-modules/Small_Models_SP26/blob/main/6-NoCodeNBs/LLM_Context_Management_and_Dynamic_Prompts.ipynb)
+- [Personal writing assistant](https://github.com/ds-modules/Small_Models_SP26/blob/main/6-NoCodeNBs/Personal_Writing_Assistant.ipynb): temperature, few-shot, hallucination, sycophancy
+- [SAT test taker](https://github.com/ds-modules/Small_Models_SP26/blob/main/4-SAT-TestTaker/QwenTestTaker-shared.ipynb): scoring a model on a set of questions
+- [RAG course tutor with llama-cpp-python](https://github.com/ds-modules/Small_Models_SP26/blob/main/5-RAG/Data88E-Demo/llamacpp_demo.ipynb)
+- [Model weights and tokens](https://github.com/ds-modules/Small_Models_SP26/blob/main/2-Beginner_NBs/2-2-Model_Weights_and_Tokens.ipynb)
+- [Downloading models from Hugging Face](https://github.com/ds-modules/Small_Models_SP26/blob/main/1-Instructor_Utils/1-2-HuggingFace_Hub_Download_gguf.ipynb)
+- [llama.cpp GPU explorer](https://github.com/ds-modules/Small_Models_SP26/blob/main/7-GPU/llama_cpp_gpu_explorer_hub.ipynb): GPU layers, threads, context size, and GPU memory
 
 ## Models and hardware
 
@@ -36,10 +45,6 @@ We use small open-weight models from about **0.1 to 8 billion parameters**.
 You can run these on any JupyterHub or on your own laptop. No commercial API account is needed.
 
 If you teach with [CloudBank Classroom](https://docs.classroom.cloudbank.org), the Python packages are already in the hub image, so students do not install anything.
-
-## Where these came from
-
-These notebooks started in [ds-modules/Small_Models_SP26](https://github.com/ds-modules/Small_Models_SP26), our Spring 2026 intro to AI materials. Each notebook keeps its original authors.
 
 ## License
 
