@@ -10,7 +10,9 @@ Most students meet a language model through a chat app or a commercial API, so t
 
 ## The notebooks
 
-Coming soon. Here is the plan. Each one stands on its own, so you can start anywhere.
+Everything is in [`open-models.ipynb`](open-models.ipynb), one part per section. **Part 1 is ready.** The rest are coming. Each part stands on its own, so you can start anywhere.
+
+Instructors run [`instructor/get-the-models.ipynb`](instructor/get-the-models.ipynb) once before class to download the models into the shared folder.
 
 | # | Notebook | What you do |
 |---|---|---|
@@ -35,10 +37,10 @@ These come from [ds-modules/Small_Models_SP26](https://github.com/ds-modules/Sma
 
 ## Models and hardware
 
-We use small open-weight models from about **0.1 to 8 billion parameters**.
+One family in four sizes, so the only thing that changes is size: [Qwen3.5](https://huggingface.co/unsloth) 0.8B, 2B, 4B, and 9B, all 4-bit GGUF files (0.5 to 5.7 GB). Apache 2.0.
 
-- Many activities run on **CPU**.
-- The larger models run on a **shared classroom GPU** (NVIDIA T4, 16 GB). An 8B model at 4-bit is about 5 GB, so two students sharing one T4 both fit.
+- The smaller ones run fine on **CPU**.
+- The larger ones run faster on a **shared classroom GPU** (NVIDIA T4, 16 GB). The 9B model is 5.7 GB, so two students sharing one T4 both fit.
 
 ## Running it
 
