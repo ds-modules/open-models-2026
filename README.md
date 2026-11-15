@@ -10,15 +10,19 @@ Most students meet a language model through a chat app or a commercial API, so t
 
 ## The notebooks
 
-Coming soon. Here is the plan. Each one stands on its own, so you can start anywhere.
+Each one stands on its own, so you can start anywhere.
 
 | # | Notebook | What you do |
 |---|---|---|
-| 1 | Run the model | Load a small model and get a response from a few lines of Python. See exactly what goes in and what comes out. |
-| 2 | Prompts and behavior | Change the system prompt and conversation history. Predict how the answers change. |
-| 3 | Generation | Turn temperature and the other generation settings and watch what happens. |
-| 4 | Evaluation | Build a small set of test questions and compare prompts and settings, instead of judging one answer at a time. |
-| 5 | Build a tutor | Put the model, the system prompt, and some Python together into a tutor that guides a student to the answer instead of giving it away. |
+| 1 | [Run the model](notebooks/01-run-the-model.ipynb) | Load a small model with llama-cpp-python and call it from Python. Try `max_tokens`, `temperature`, a system message, few-shot examples, and see why the chat format matters. |
+| 2 | [Prompts and context](notebooks/02-prompts-and-context.ipynb) | Why the model does not remember anything, how the messages list works, dynamic system prompts for different students, and keeping the history from getting too long. |
+| 3 | [Generation settings](notebooks/03-generation-settings.ipynb) | Temperature, tokens, few-shot, hallucination and sycophancy, then build a writing assistant with a system prompt. |
+| 4 | [Evaluation](notebooks/04-evaluation.ipynb) | Have the model take open SAT-style questions, pull its answers out with Python, and score it on a whole set instead of one answer at a time. |
+| 5 | [AI tutor](notebooks/05-ai-tutor.ipynb) | Build a course tutor: load course materials, search them, and have the model answer from what it found (RAG). |
+
+**Extras:** [Tokens and weights](notebooks/extras/tokens-and-weights.ipynb) opens up a GGUF file to show the tokens, the vocabulary, and the weights as plain numbers.
+
+**For instructors:** [Download models](instructor/download-models.ipynb) puts GGUF models in a shared folder for the whole class. [GPU explorer](instructor/gpu-explorer.ipynb) shows how GPU layers, threads, and context size change speed and GPU memory.
 
 ## Models and hardware
 
@@ -32,6 +36,10 @@ We use small open-weight models from about **0.1 to 8 billion parameters**.
 You can run these on any JupyterHub or on your own laptop. No commercial API account is needed.
 
 If you teach with [CloudBank Classroom](https://docs.classroom.cloudbank.org), the Python packages are already in the hub image, so students do not install anything.
+
+## Where these came from
+
+These notebooks started in [ds-modules/Small_Models_SP26](https://github.com/ds-modules/Small_Models_SP26), our Spring 2026 intro to AI materials. Each notebook keeps its original authors.
 
 ## License
 
