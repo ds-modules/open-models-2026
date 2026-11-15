@@ -12,7 +12,7 @@ Most students meet a language model through a chat app or a commercial API, so t
 
 Everything is in [`open-models.ipynb`](open-models.ipynb), one part per section. **Part 1 is ready.** The rest are coming. Each part stands on its own, so you can start anywhere.
 
-**[Token Lab](https://ds-modules.github.io/open-models-2026/token-lab.html)** shows where tokens come from: build a vocabulary one merge at a time, then see each token's ID and its row of numbers.
+**[Token Lab](https://ds-modules.github.io/open-models-2026/token-lab.html)** shows where tokens come from: build a vocabulary one merge at a time, see each token's ID and its row of numbers, then nudge a row with gradient descent until it predicts the right next token.
 
 Instructors run [`instructor/get-the-models.ipynb`](instructor/get-the-models.ipynb) once before class to download the models into the shared folder.
 
